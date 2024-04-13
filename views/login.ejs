@@ -1,0 +1,35 @@
+<!-- login.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>3legant</title>
+</head>
+<body>
+  <div class="everything">
+    <div class="centered">
+      <img class="image" src="/src/Left.png">
+    </div>
+    <form action="/login" method="post">
+      <h1> Sign in</h1>
+      <br>
+      <h5>Don't have an account yet ?<span><a class="a1" href="/signup">Sign Up</a></span></h5>
+      <% if (message) { %>
+        <div class="flash-message">
+          <%= message %>
+        </div>
+      <% } %>
+      <div class="container">
+        <input type="text" placeholder="Your Username" name="username" required>
+        <input type="password" placeholder="Password" name="password" required> <br>
+        <input type="checkbox" checked="checked" name="remember"> 
+        <label>Remember me</label>  <br>  
+        <span> <a href="/reset-password" class="fspw">Forgot password?</a></span>
+        <button type="submit">Login</button>
+      </div>      
+    </form>
+  </div>
+</body>
+</html>

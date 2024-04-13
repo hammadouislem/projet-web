@@ -1,0 +1,547 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+.navBar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+.navBar .navTop{
+width: 100%;
+background: #000;
+height: 40px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+
+.navBar .navTop button{
+  color: #FFAB00 ;
+  background-color: transparent;
+  border: none;
+  cursor:  pointer;
+}
+
+/* start navBottom */
+
+.navBottom{
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #FFF;  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.navBottom .logo{
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  padding-left: 2.5vw;
+}
+.navBottom ul {
+ display: flex;
+ gap: 40px;
+ justify-content: center;
+ align-items: center;
+ list-style: none;
+}
+
+.navBottom ul li a{
+  text-decoration: none;
+  font-style: normal;
+  color: #000;
+}
+
+.navBottom .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-right: 2.5vw;
+}
+
+.navBottom .icons a{
+  color: #000;
+}
+/* end navbar */
+/* start hero */
+.hero{
+  background-image: url('../src/icons/hero_bg.png');
+  background-size: cover;
+  width:100vw;
+  height: calc(100vh);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.hero .content{
+ width: 538px;
+}
+.hero .content h1{
+  color: var(--Black-900, #121212);
+font-size: 80px;
+font-style: normal;
+font-weight: 500;
+line-height: 70px; /* 105% */
+letter-spacing: -3px;
+}
+.hero .content h1 span{
+  color: #377DFF;
+}
+.hero .content p{
+  margin-top: 8px;
+}
+.hero .content button{
+  border-radius: 8px;
+  background: var(--neutral-07100, #141718);
+  color: white;
+  display: flex;
+  padding: 12px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.container{
+  width: 90vw;
+}
+
+
+/* start marques */
+.marques{
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* start Shop */
+.shop{
+  width: 100vw;
+  padding: 0 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.title_section{
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+  margin: 38px 0;
+  
+}
+.shop .cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.shop .cards .Headband{
+  background-image: url('../src/shop/Headband.svg');
+  width: 548px;
+  height: 664px;
+  padding: 40px;
+}
+
+.shop .cards .two{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.Earbuds , .Accessories{
+  width: 548px;
+  height: 319px;
+  flex-shrink: 0;
+  padding: 40px;
+} 
+.Accessories{
+  background-image: url('../src/shop/Accessories.svg');
+}
+.Earbuds{
+  background-image: url('../src/shop/Earbuds.svg');
+}
+.card{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.coll{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid 1px #000;
+  width: fit-content;
+}
+/* end Shop */
+/* start bestSeller */
+.bestSeller{
+  width: 100%;
+  padding: 0 2.5vw;
+  margin-top: 48px ;
+  margin-bottom:  100px;
+}
+/* end bestSeller */
+
+
+/* start products */
+.products{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.product .p{
+  width: 262px;
+  height: 349px;
+}
+.p1{
+  background-image: url('../src/products/sony1.svg');
+}
+.p2{
+  background-image: url('../src/products/beats.svg');
+}
+.p3{
+  background-image: url('../src/products/sony2.svg');
+}
+.p4{
+  background-image: url('../src/products/earbuds.svg');
+}
+.p5{
+  background-image: url('../src/products/studio.svg');
+}
+.p6{
+  background-image: url('../src/products/jbl.svg');
+}
+.p7{
+  background-image: url('../src/products/Bose.svg');
+}
+.p8{
+  background-image: url('../src/products/akg.svg');
+}
+
+
+/* start counter */
+.counter{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.40) 0%, rgba(255, 171, 0, 0.40) 100%), #FFF;
+}
+.counter .content{
+  flex: 1;
+  padding-left: 72px;
+}
+.counter .content span{
+  color: var(--Blue, #377DFF);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; 
+text-transform: uppercase;
+}
+.counter .content h1{
+  color: var(--Black-900, #121212);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; 
+  letter-spacing: -0.4px;
+  margin: 16px 0;
+}
+
+.counter .content p{
+  color: var(--Black-900, #121212);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; 
+}
+.counter .content p:first-of-type{
+  margin-bottom: 24px ;
+}
+.counter .content .count{
+  display: flex;
+  height: 60px;
+  gap: 16px;
+  margin: 20px 0;
+}
+.counter .content .count div{
+  background-color: white;
+  color: #000;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+
+}
+
+.counter .content  button{
+  display: flex;
+padding: 6px 40px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: var(--neutral-07100, #141718);
+color: wheat;
+}
+
+/* stat services  */
+.services{
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  width: 95vw;
+  margin-left: 2.5vw;
+
+}
+.services .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 262px;
+  height: 220px;
+  background: var(--neutral-02100, #F3F5F7);
+  padding: 0 32px;
+  margin: 40px 0;
+  gap: 12px;
+}
+
+/* start instagram */
+.instagram{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+  gap: 16px;
+}
+.instagram span{
+  color: var(--neutral-04100, #6C7275);
+  text-align: center;
+    font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;  
+}
+.instagram h1{
+  color: var(--Black-900, #121212);
+text-align: center;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px; 
+letter-spacing: -0.4px; 
+}
+.instagram h3{
+  color: var(--Black-900, #121212);
+  text-align: center;
+  
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+.instagram p{
+  color: var(--neutral-04100, #6C7275);
+text-align: center;
+
+/* Headline 7 */
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 140% */
+}
+/* end instagram */
+/* start gallery  */
+.gallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+/* end gallery  */
+/* start email */
+.email{
+  background-image: url('../src/email.svg');
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email h1{
+  color: var(--Black-900, #121212);
+text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px; /* 110% */
+letter-spacing: -0.4px;
+margin-bottom: 8px;
+}
+.email h5{
+  color: var(--Black-900, #121212);
+text-align: center;
+
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; 
+margin-bottom: 32px;
+}
+.input_container{
+  width: 400px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.input_container input{
+  border: none;
+  background-color: transparent;
+  width: 85%;
+}
+.input_container span{
+  color: var(--neutral-04100, #6C7275);
+
+/* Button S */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 175% */
+letter-spacing: -0.4px;
+}
+
+/* start footer */
+footer{
+  width: 100%;
+  background-color: #000;
+  padding-top: 80px;
+  height: fit-content;
+  padding-bottom: 40px;
+ }
+ footer .topFooter{
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+
+ }
+ footer .topFooter .partOne{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 32px;
+  margin-bottom: 49px;
+ }
+ footer .topFooter .partOne div:nth-of-type(2), div:nth-child(3){
+  color: var(--neutral-03100, #E8ECEF);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  
+ }
+ footer .topFooter .partOne .logoFooter{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+ }
+ footer .topFooter .partTwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  
+ }
+ footer .topFooter .partTwo div{
+  color: var(--neutral-01100, #FEFEFE);
+
+  /* Caption 1 */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+ }
+ .ligne{
+  width: 90vw;
+  margin-left: 5vw;
+  border-top: 2px solid #6C7275;
+  height: 16px;
+  background-color: #000;
+ }
+
+ footer .bottomFooter {
+  display: flex;
+  justify-content: space-between;   
+  gap: 28px;
+  width: 90vw;
+  margin-left: 5vw;
+ }
+ footer .bottomFooter .bottomFooterleft {
+  display: flex;
+  gap: 28px;
+ }
+ footer .bottomFooter .bottomFooterRight {
+  display: flex;
+  gap: 28px;
+ }
+
+/* end footer */
+.logout{
+  background-image: url(../src/—Pngtree—vector\ logout\ icon_4184683.png);
+}

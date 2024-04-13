@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Make sure this path is correct -->
+
+  <link rel="stylesheet" href="/css/profile.css">
+  <title>profile</title>
+</head>
+<body>
+   <!-- start navbar -->
+   <div class="navBar">
+    <!-- navbar Top -->
+   
+    <!-- Navbar Bottom -->
+    <div class="navBottom">
+      <div class="logo">3legant.</div>
+        <ul>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Shop">Shop</a></li>
+          <li><a href="Product">Product</a></li>
+          <li><a href="Contact_Us">Contact Us</a></li>
+        </ul>
+        <div class="icons">
+          <a href="#"><i class="fas fa-user"></i> </a>
+          <a href="#"><i class="fas fa-search"></i> </a>
+          <a href="#"> <i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </div>
+  </div>
+  <!-- end navbar -->
+  <!-- start hero -->
+  <h1 class="title">My Account</h1>
+  <div class="account">
+    <div class="leftAccount">
+      <img src= <%= UserData.picture %> alt="">
+      <h1><%= UserData.username %></h1>
+      <span>Account</span>
+      <div class="logout">
+      <a href="logout">logout</a></div>
+    </div>
+    <div class="rightAccount">
+      <div class="Account_details">
+        <h1 class="title_sett">Account Details</h1>
+        <div class="input_label">
+          <label for="#">First name *</label>
+          <h3 class="string"><%= UserData.name %></h3>
+        </div>
+
+        <div class="input_label">
+          <label for="#">Display name *</label>
+          <h3 class="string"><%= UserData.username %></h3>
+          <span>This will be how your name will be displayed in the account section and in reviews</span>
+        </div>
+        <div class="input_label">
+          <label for="#">Email *</label>
+          <h3 class="string"><%= UserData.email %></h3>
+        </div>
+      </div>
+      <form action="/profile" method="post">
+        <div class="Account_details pass">
+          <h1 class="title_sett">Password</h1>
+          <% if (message) { %>
+            <div class="flash-message">
+              <%= message %>
+            </div>
+          <% } %>
+          <div class="input_label">
+            <label for="oldpassword">Old password</label>
+            <input type="password" placeholder="Old password" name="oldpassword" id="oldpassword">
+          </div>
+          <div class="input_label">
+            <label for="newpassword">New password</label>
+            <input type="password" placeholder="New password" name="newpassword" id="newpassword">
+          </div>
+        </div>
+        <button type="submit">Save changes</button>
+      </form>
+      
+    </div>
+  </div>
+  <!-- end hero -->
+   <!-- start footer -->
+   <footer>
+    <div class="topFooter">
+      <div class="partOne">
+        <div class="logoFooter">3legant.</div>
+        <div class="shape"> | </div>
+        <div>Headphone Store</div>
+      </div>
+      <div class="partTwo">
+        <div>Home</div>
+        <div>Shope</div>
+        <div>Product</div>
+        <div>Blog</div>
+        <div>Contact Us</div>
+      </div>
+    </div>
+    <div class="ligne"></div>
+    <div class="bottomFooter">
+      <div class="bottomFooterleft">
+        <span>Copyright © 2023 3legant. All rights reserved</span>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+      </div> 
+      <div class="bottomFooterRight">
+        HAMMADOU Islem & FEKIR Rania
+      </div>
+      
+    </div>
+  </footer>
+  <!-- end footer --> 
+</body>
+</html>

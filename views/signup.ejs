@@ -1,0 +1,40 @@
+<!-- signup.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>3legant</title>
+</head>
+<body>
+  <div class="everything">
+    <div class="centered">
+      <img class="image" src="/src/Left.png">
+    </div>
+    <div class="form1">
+    <form action="/signup" method="post">
+      <h1> Sign up</h1>
+      <br>
+      <h5>Already have an account ?<span><a class="a1" href="/">Sign In</a></span></h5>
+      <% if (message) { %>
+        <div class="flash-message">
+          <%= message %>
+        </div>
+      <% } %>
+      <div class="container">
+        <input type="text" placeholder="Your Name" name="name" required>
+        <input type="text" placeholder="Username" name="username" required><br>
+        <label for="picture">Profile Picture :</label>
+        <input type="file"  name="picture" required>
+        <input type="text" placeholder="Email address" name="email" required>
+        <input type="password" placeholder="Password" name="password" required> <br>
+        <input type="checkbox" checked="checked" name="remember"> 
+        <label>I agree with <span><a href="#">Privacy Policy</a></span> and <span><a href="#">Terms of Use</a></span></label>  
+        <br>
+        <button type="submit">Sign up</button>
+      </div>
+    </form></div>
+  </div>
+</body>
+</html>
