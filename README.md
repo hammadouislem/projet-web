@@ -1,6 +1,7 @@
 University Web Project
+
 Description
-A web application developed as a first project using Express.js and MongoDB, demonstrating basic backend development skills.
+A web application developed as a first project using Express.js and MongoDB, demonstrating basic backend development skills , don't blame me for the frontend xD.
 Technologies Used
 
 Express.js
@@ -16,12 +17,12 @@ Installation
 
 Clone the repository
 
-bashCopygit clone https://github.com/hammadouislem/projet-web.git
+git clone https://github.com/hammadouislem/projet-web.git
 cd projet-web
 
 Install dependencies
 
-bashCopynpm install
+npm install
 
 Set up environment variables
 
@@ -32,13 +33,8 @@ Add necessary configuration (database URL, port, etc.)
 
 Start the server
 
-bashCopynpm start
-Project Structure
+npm start
 
-models/: Database models
-routes/: API endpoint definitions
-controllers/: Business logic
-config/: Configuration files
 
 Contributing
 
